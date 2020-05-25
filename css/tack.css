@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.toplogo{
+	background-color: black;
+}
+
+.toplogo img{
+	display: block;
+	margin: auto;
+	width: 100px;
+	padding: 10px;
+}
+
+.kassaflow .border{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	justify-content: space-between;
+	z-index: -1;
+	padding-bottom: 10px;
+}
+
+.hr{
+	border-top: 2px solid #A9A9A9;
+	width: 33%;
+	top: 15px;
+	content:'';
+}
+
+.hractive{
+	border-top: 2px solid #ff9d00;
+	width: 33%;
+	top: 15px;
+	content:'';
+}
+
+.kassaflow{
+	max-width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position:relative;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.kassaflow .steptitle{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 28px;
+	overflow: visible;
+}
+
+.kassaflow .steptitle .step{
+	border: 2px solid 	#A9A9A9;
+	border-radius: 100%;
+	color: #A9A9A9;
+	padding: 5px;
+	margin: 5px;
+	width: 15px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.kassaflow .steptitle .stepactive{
+	border: 2px solid 	#ff9d00;
+	border-radius: 100%;
+	color: #ff9d00;
+	padding: 5px;
+	margin: 5px;
+	width: 15px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.kassaflow .steptitle span{
+	color: #A9A9A9;
+	font-size: 12px;
+}
+
+.kassaflow .steptitle .active{
+	color: #ff9d00;
+}
+
+.leverans{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #c4c4c4;
+	padding: 10px;
+}
+
+.leverans h1{
+	font-size: 16px;
+}
+
+.leverans .kassa{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.leverans .kassa a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #333;
+}
+
+.leverans .kassa a:hover{
+	color: #ff9d00;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tack_images/stadium.jpg");
+  
+
+  
+  min-height: 70vh;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+.box {
+	width: 30%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 10px;
+	border: 1px solid #ff9d00;
+}
+
+.box li{
+	padding: 5px;
+	margin-left: 15px;
+}
+
+.box input{
+	margin: 10px 0;
+}
+
+
+.boxwrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.boxwrapper h3{
+	margin-bottom: 10px;
+
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+             
+}
+
+.btn {
+    display: block;
+    width: 100px;
+
+    padding: 1em;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+
+
+    border:3px solid black;
+    border-radius: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100px;
+
+    padding: 1em;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+
+
+    border:3px solid white;
+    border-radius: 20px;
+}
+footer{
+	border-top: 1px solid #c4c4c4;
+}
+
+.footercheckout{
+	width: 30%;
+	margin: 0 auto;
+	padding: 65px 0;
+}
+
+.row1{
+	display: flex;
+	align-items: center;
+}
+
+.row2{
+	display: flex;
+	align-items: center;
+}
+
+.footerimage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+}
+.footerimage img{
+	width: 75px;
+	padding: 15px 5px;
+}
+
+.footerlink{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 0 40px 0;
+}
+
+.footerlink a{
+	text-decoration: none;
+	color: #ff9d00;
+	font-size: 14px;
+}
+
+.footercheckoutbutton {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.footercheckoutbutton .button{
+	color: #c4c4c4;
+	border: 2px solid #c4c4c4;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+@media (max-width: 800px){
+
+.kassaflow{
+	max-width: 90%;
+}
+
+.box{
+	float: none;
+	width: 100%;
+}
+
+.footerimage{
+	flex-direction: column;
+}
+
+.footerlink {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.footerlink a{
+	margin-top: 10px;
+}
+
+}

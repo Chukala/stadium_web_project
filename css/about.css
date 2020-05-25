@@ -1,0 +1,122 @@
+@import url("../css/style.css");
+/*About-sidans innehåll startar här*/
+#about {
+	display: flex;
+	width: 75%;
+	margin: 0 200px;
+	padding-bottom: 60px;
+}
+
+#about p {
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+.aboutimage {
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
+
+.aboutbox1 {
+	flex-basis: 60%;
+	padding-top: 40px;
+	padding-right: 20px;
+}
+
+.aboutbox2 {
+	flex-basis: 40%;
+	padding-top: 30px;
+}
+.marginboxbutton{
+	border: 1px solid #FF9D00;
+	display: none;
+	width: 100%;
+}
+
+.marginbox {
+	margin: 40px;
+	border-left: 1px solid #C9C9C9;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	padding-left: 30px;	
+}
+
+.marginbox a:hover {
+	color: #FF9D00;
+
+}
+
+.aboutbox2 {
+	height: 50px;
+}
+
+.aboutbox2 li {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.aboutbox2 a {
+	text-decoration: none;
+	color: #000;
+	flex-basis: 35%;
+
+}
+
+@media (max-width: 800px){
+
+.footerwrapper{
+	flex-direction: column;
+}
+
+#about {
+	margin: 15px;
+	width: 85%;
+}
+
+.marginboxbutton{
+	display: inline-block;
+	position: relative;
+	border: 2px solid #ff9d00;
+	padding: 8px;
+}
+
+.marginboxbutton:hover .marginbox{
+	display: block;
+}
+
+.marginbox{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	overflow: auto;
+	margin:0;
+	z-index: 10;
+	border: 2px solid #ff9d00;
+	left:0;
+	top: 35px;
+}
+
+#about{
+	flex-direction: column;
+}
+
+.aboutbox2{
+	order:1;
+}
+
+.aboutbox1{
+	order: 2;
+}
+
+.aboutbox1 img {
+	width: 110%;
+
+}
+}
+

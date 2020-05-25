@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../images/favicon-16x16.png">
+	<title>Varukorg</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<link rel="stylesheet" href="../css/kassa_page_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<header id="header-top">
+		<div class="navigation-top-list">
+			<ul id="top-logo_ul">
+				<li><a href="index.html"><img src="../images/stadium-small.png" alt="Stadium_logo"></a></li>
+				<li><a href="#"><img src="../images/outlet-small.png" alt="StadiumOutletlogo"></a></li>
+				<li><a href="#"><img src="../images/sp-small.png" alt="sneakersPointlogo"></a></li>
+			</ul>
+			<div class="top-h2">
+				<h2>Part of Stadium Group</h2>
+			</div>
+		</div>
+<!--top navigation ends here-->
+		<div id="middle-menu-list_wrapper">
+			<div class="middle-menu_ul">
+				<ul class="middle-ul" id="middle-ul-left">
+					<li><a href="#">Våra butiker</a></li>
+					<li><a href="#" id="Kundservice">Kundservice</a>
+						<label for="nav-toggle_for_kundservice" class="nav-toggle_for_kundservice-label"><i class="fa fa-angle-down rotate"></i></label>
+						<input type="checkbox" id="nav-toggle_for_kundservice" class="nav-toggle-kundservice">
+						<div class="fw-dropdown">
+							<ul id="middle_menu_togle_ul">
+								<li><a href="#">Frågor & Svar</a></li>
+								<li><a href="#">Kontakta oss</a></li>
+								<li><a href="#">Garanterat nöjd</a></li>
+								<li><a href="#">Leverans och Returer</a></li>
+							</ul>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="middle-menu_ul" id="middle_logo">
+			  <ul class="middle-ul">
+			  	<li id="stadium_Logo_black"><a href="#"><img src="../images/Stadium-Logo-black.png" alt="Stadium_logo"></a></li>
+			  	<li id="stadium_white_image"><a href="#"><img src="../images/stadium-small.png" alt="Stadium_logo_white"></a></li>
+			  </ul>
+			</div>
+
+			<div class="middle-menu_ul" id="middle-ul-right">
+				<ul class="middle-ul">
+					<li><a href="#"><i class="fa fa-user"></i><span> Logga in</span></a></li>
+					<li><a href="kassa.html" target="_blank"><i class="fa fa-shopping-bag"></i><span> Kassa</span></a></li>
+				</ul>
+			</div>
+		</div>
+<!--mobile version start here-->
+        <div class="container" id="container">
+			<div id="sub-container">
+				<a href="#"><img src="../images/Stadium-Logo-black.png" alt="stadium"></a>
+			</div>
+			    <div class="mobile-menu-container" id="mobile-menu-container">
+			    	<div class="mobile_ul_container">
+						<ul id="mobile-ul">
+						<li><a href="#"><span><i class="fa fa-user"></i> </span><br>Logga in</a></li>
+						<li><a href="#"><span><i class="fa fa-shopping-bag"></i></span><br> Kassa</a></li>
+						<li><a href="#"><span><i class="fa fa-search"></i></span><br>Sök</a></li>
+						<li><a href=""><label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span> Meny</label></a></li>
+						<input type="checkbox" id="nav-toggle" class="nav-toggle">
+					    <nav id="menu">
+						  <ul id="main-menu">
+							<li><a href="index.html">Startsida</a></li>
+							<li><a href="product.html">
+								    <div class="dam_menu">
+										<label for="nav-toggle_for_dam">
+											<i class="fa fa-angle-right"></i> Dam
+										</label>
+									</div>
+						          </a>
+							    <input type="checkbox" id="nav-toggle_for_dam">
+								<div class="m-dropdown">
+									<ul id="submenu">
+									    <li><a href="product.html">
+										<div class="dam_menu">
+							            <label for="nav-toggle_for_damklader"><i class="fa fa-angle-right"></i>Damkläder
+							            </label>
+							            </div>
+							        </a>
+							<input type="checkbox" id="nav-toggle_for_damklader">
+							           <div class="m-dropdown">
+									    <ul id="submenu">
+	                                      <li><a href="">Jackor</a></li>
+										  <li><a href="">Byxor</a></li>
+										  <li><a href="">Kepsar</a></li>
+										  <li><a href="">Badkläder</a></li>
+									    </ul>
+									    </div>
+									  </li>
+
+										<li><a href="">
+										<div class="dam_menu">
+							              <label for="nav-toggle_for_damskor"><i class="fa fa-angle-right"></i>Damskor
+							              </label>
+							            </div>
+										 </a>
+										 <input type="checkbox" id="nav-toggle_for_damskor">
+							            <div class="m-dropdown">
+									    <ul id="submenu">
+	                                      <li><a href="">Fotbollsskor</a></li>
+										  <li><a href="">Basketskor</a></li>
+										  <li><a href="">Cykelskor</a></li>
+										  <li><a href="">Golfskor</a></li>
+									    </ul>
+									    </div>
+										</li>
+										<li><a href="product.html" id="allt_inom_dam">Allt inom Dam</a></li>
+									</ul>
+								</div>
+							</li>
+
+							<li><a href=""><span><i class="fa fa-angle-right"></i></span>Herr</a></li>
+
+							<li><a href=""><span><i class="fa fa-angle-right"></i></span>Barn</a>
+							</li>
+
+							<li><a href=""><span><i class="fa fa-angle-right"></i></span>Sport</a>
+							</li>
+
+							<li><a href=""><span><i class="fa fa-angle-right"></i></span>Utrustning</a>
+							</li>
+							<li><a href=""><span><i class="fa fa-angle-right"></i></span>Varumärken</a></li>
+							<li><a href=""><span><i class="fa fa-angle-right"></i></span>Magazine</a></li>
+						  </ul>
+					    </nav>
+						</ul>
+					</div>
+		       </div>
+        </div>
+
+<!--mobile version ends here-->
+
+<!--desktop menu start here-->
+		<div class="bottom-menu-list_wrapper">
+			<input type="checkbox" id="nav-toggle" class="nav-toggle">
+			<nav id="menu">
+				<ul id="main-menu">
+					<li><a href="product.html">Dam</a>
+						<div class="fw-dropdown">
+							<input type="checkbox" id="nav-toggle-inside" class="nav-toggle-inside">
+							<ul id="submenu">
+								<span class="submenu_ul">Damkläder</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Badkläder</a></li>
+								<li><a href="">Byxor</a></li>
+								<li><a href="">Halsdukar</a></li>
+								<li><a href="">Jackor</a></li>
+								<li><a href="">Kepsar</a></li>
+								<li><a href="">kjolar & klän..</a></li>
+							</ul>
+							<ul id="submenu">
+								<br>
+								<li><a href="">Linnen</a></li>
+								<li><a href="">Mössor</a></li>
+								<li><a href="">Regnkläder</a></li>
+								<li><a href="">Shorts</a></li>
+								<li><a href="">Solglasögon</a></li>
+								<li><a href="">Sport-BH</a>
+								</li>
+								<li><a href="">Strumpor</a></li>
+							</ul>
+
+							<ul id="submenu">
+								<span class="submenu_ul">Damskor</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Cykelskor</a></li>
+								<li><a href="">Fotbollskor</a></li>
+								<li><a href="">Golfskor</a></li>
+								<li><a href="">Gummistövlar</a></li>
+								<li><a href="">Inomhusskor</a></li>
+								<li><a href="">Sandaler</a></li>
+							</ul>
+							<ul id="submenu">
+								<br>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+
+						</div>
+					</li>
+
+					<li><a href="">Herr</a>
+						<div class="fw-dropdown">
+							<ul  id="submenu">
+
+								<span class="submenu_ul">Herrkläder</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Badkläder</a></li>
+								<li><a href="">Byxor</a></li>
+								<li><a href="">Halsdukar</a></li>
+								<li><a href="">Jackor</a></li>
+								<li><a href="">Kepsar</a></li>
+								<li><a href="">kjolar & klän..</a></li>
+							</ul>
+							<ul>
+								<br>
+								<li><a href="">Linnen</a></li>
+								<li><a href="">Mössor</a></li>
+								<li><a href="">Regnkläder</a></li>
+								<li><a href="">Shorts</a></li>
+								<li><a href="">Solglasögon</a></li>
+								<li><a href="">Sport-BH</a>
+								</li>
+								<li><a href="">Strumpor</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Herrskor</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Cykelskor</a></li>
+								<li><a href="">Fotbollskor</a></li>
+								<li><a href="">Golfskor</a></li>
+								<li><a href="">Gummistövlar</a></li>
+								<li><a href="">Inomhusskor</a></li>
+								<li><a href="">Sandaler</a></li>
+							</ul>
+							<ul>
+								<br>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+
+						</div>
+					</li>
+
+					<li><a href="">Barn</a>
+						<div class="fw-dropdown">
+							<ul>
+								<span class="submenu_ul">Barnkläder</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Badkläder</a></li>
+								<li><a href="">Byxor</a></li>
+								<li><a href="">Halsdukar</a></li>
+								<li><a href="">Jackor</a></li>
+								<li><a href="">Kepsar</a></li>
+								<li><a href="">kjolar & klän..</a></li>
+							</ul>
+							<ul>
+								<br>
+								<li><a href="">Linnen</a></li>
+								<li><a href="">Mössor</a></li>
+								<li><a href="">Regnkläder</a></li>
+								<li><a href="">Shorts</a></li>
+								<li><a href="">Solglasögon</a></li>
+								<li><a href="">Sport-BH</a>
+								</li>
+								<li><a href="">Strumpor</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Barnskor</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Cykelskor</a></li>
+								<li><a href="">Fotbollskor</a></li>
+								<li><a href="">Golfskor</a></li>
+								<li><a href="">Gummistövlar</a></li>
+								<li><a href="">Inomhusskor</a></li>
+								<li><a href="">Sandaler</a></li>
+							</ul>
+							<ul id="submenu">
+								<br>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li><a href="">Sport</a>
+						<div class="fw-dropdown">
+							<ul>
+								<span class="submenu_ul">Alpint</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Badkläder</a></li>
+								<li><a href="">Byxor</a></li>
+								<li><a href="">Halsdukar</a></li>
+								<li><a href="">Jackor</a></li>
+								<li><a href="">Kepsar</a></li>
+								<li><a href="">kjolar & klän..</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Löpning</span>
+								<li><a href="">Linnen</a></li>
+								<li><a href="">Mössor</a></li>
+								<li><a href="">Regnkläder</a></li>
+								<li><a href="">Shorts</a></li>
+								<li><a href="">Solglasögon</a></li>
+								<li><a href="">Sport-BH</a>
+								</li>
+								<li><a href="">Strumpor</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Träning</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Cykelskor</a></li>
+								<li><a href="">Fotbollskor</a></li>
+								<li><a href="">Golfskor</a></li>
+								<li><a href="">Gummistövlar</a></li>
+								<li><a href="">Inomhusskor</a></li>
+								<li><a href="">Sandaler</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Allt från Sport</span>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+							<ul>
+								<br>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li><a href="">Utrustning</a>
+						<div class="fw-dropdown">
+							<ul>
+								<span class="submenu_ul">Alpint</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Badkläder</a></li>
+								<li><a href="">Byxor</a></li>
+								<li><a href="">Halsdukar</a></li>
+								<li><a href="">Jackor</a></li>
+								<li><a href="">Kepsar</a></li>
+								<li><a href="">kjolar & klän..</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Löpning</span>
+								<li><a href="">Linnen</a></li>
+								<li><a href="">Mössor</a></li>
+								<li><a href="">Regnkläder</a></li>
+								<li><a href="">Shorts</a></li>
+								<li><a href="">Solglasögon</a></li>
+								<li><a href="">Sport-BH</a>
+								</li>
+								<li><a href="">Strumpor</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Träning</span>
+								<li><a href="">Nyheter</a></li>
+								<li><a href="">Cykelskor</a></li>
+								<li><a href="">Fotbollskor</a></li>
+								<li><a href="">Golfskor</a></li>
+								<li><a href="">Gummistövlar</a></li>
+								<li><a href="">Inomhusskor</a></li>
+								<li><a href="">Sandaler</a></li>
+							</ul>
+							<ul>
+								<span class="submenu_ul">Allt från Utrustning</span>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+							<ul>
+								<br>
+								<li><a href="">Sneakers</a></li>
+								<li><a href="">Tennisskor</a></li>
+								<li><a href="">Träningsskor</a></li>
+								<li><a href="">Vandringsskor</a></li>
+								<li><a href="">Walkingskor</a></li>
+								<li><a href="">kängor</a></li>
+								<li><a href="">Skotillbehör</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="">Varumärken</a></li>
+					<li><a href="">Magazine</a></li>
+					<li><a href=""><i class="fa fa-search"></i><input id="search-id" type="text" placeholder="Sök på Stadium..."></a></li>
+				</ul>
+			</nav>
+			<label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span> Meny</label>
+		</div>
+
+	</header>
+<!--last menu bar before hero section-->
+
+    <section id="info_bar_header">
+		<div class="info_bar_header">
+		   <a href="#">Lorem ipsum dolor sit amet,elit.t.o.m. 5/12 </a> <em><span id="shoppa"><a href="#">Shoppa</a></span></em>
+		</div>
+	</section>
+<!--last varukorg menu section-->
+<section id="info_bar_header_bottom">
+	<div class="info_bar_header_bottom">
+		<h2>Varukorg</h2>
+	</div>
+</section>
+
+
+<section id="test_section">
+	<div class="test_container">
+		<div class="box_container">
+		   <div class="box_one">
+			<div class="container_inside_box_one">
+					<div class="icon_images">
+					   <img src="../images/box.png" alt="box" width="40" height="40">&nbsp;
+					</div>
+					<div>
+						<p>&nbsp;1 produkter skickas av <strong><br>stadium.se</strong></p>
+					</div>
+			</div>
+		    <div class="divider-component"><hr></div>
+		    <div class="container_two_inside_box_one">
+				<div class="product_image">
+					<a href="#"><img src="../images/jacka_images.png" alt="jacka" width="106" height="106"></a>
+				</div>
+
+				<div class="product_text">
+				     <a href="#">
+				     	<p>W PARKA <br><strong>EVEREST <br></strong></p></a>
+				     	<br>BLACK <br>34
+				</div>
+
+				<div class="closing_image">
+				     <a href="#" id="close_icon"><i class="fa fa-2x fa fa-times-circle"></i></a>
+				</div>
+		    </div>
+
+		   <div class="container_three_inside_box_one">
+				<div class="select_class_box">
+					<select name="quantity" id="quantity">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					</select>
+				</div>
+
+			    <div class="shopping_basket_box_five">
+			    <p>999,00</p>
+			   </div>
+			   <div class="shopping_basket_box_six">
+				 <p>999,00</p>
+			  </div>
+		   </div>
+	      </div>
+       </div>
+
+      <div class="box_container">
+		<div class="box_two">
+			<div class="box_two_collection">
+			<div class="container_box_two">
+				<div><p>Varukostnad</p></div>
+				<div><p>999,00</p></div>
+			</div>
+
+		   <div class="container_box_three">
+			  <div><p>Totalsumma</p></div>
+			 <div><p>999,00</p></div>
+		  </div>
+
+			<div class="container_box_four">
+				<div><p><strong>Att betala</strong> Inkl. mome</p></div>
+				<div><p><strong>999,00</strong></p></div>
+			</div>
+		<div class="container_box_five">
+		    <a href="leverans.html"><button class="btn">Gå vidare till kassan</button></a>
+		</div>
+		<!--p>Aktivera en <br><strong>Värdekod</strong> </p-->
+		<div class="one">
+			<label for="vardekode_checkbox_label" id="my_label"><span><p>Aktivera en <br><strong>Värdekod</strong> </p></span> </label>
+
+			<input type="checkbox" class="vardekode_checkbox_label" id="vardekode_checkbox_label">
+			<div class="two">
+				<fieldset>
+				<legend>Ange kod</legend>
+				<input type="text" class="text_input">
+				</fieldset>
+				<button class="btn">AKTIVERA KOD</button>
+			</div>
+		</div>
+        </div>
+    </div>
+		</div>
+	</div>
+</section>
+<section id="clearfix">
+<div class="clearfix">P</div>
+</section>
+
+<!--Bästsäljare på stadium.se product section-->
+	<div id="bestseler-four_product_section">
+	<div class="bestseler-four_product_container">
+      <div id="utvalda-favoriter">
+		<div class="top-row">
+			<img src="../images/back.png">
+			<div class="divider_component"><span>Andra tittade även på</span></div>
+			<img src="../images/next.png">
+			<h5>Populära produkter</h5>
+		</div>
+		<div class="dots">
+			<img src="../images/circle.png">
+			<img src="../images/circleg.png">
+			<img src="../images/circleg.png">
+			<img src="../images/circleg.png">
+		</div>
+	</div>
+
+
+		<div class="bestseler-four_images">
+			<div class="image_box">
+				<a href=""><img src="../images/jacka_images.png" alt="product1"></a>
+			</div>
+			<div class="image_box">
+				<a href=""><img src="../images/233078_101_EVEREST_T MFN UW SHIRT.png" alt="product1"></a>
+			</div>
+			<div class="image_box">
+				<a href=""><img src="../images/266117_102_KARI TRAA_W SJÖLVSAGT SET.png" alt="product1"></a>
+			</div>
+			<div class="image_box">
+				<a href=""><img src="../images/image.png" alt="product1"></a>
+			</div>
+       </div>
+             <div class="product_name_price_wrapper">
+				<div class="product_price">
+				<h2>SOC</h2>
+				<p>U TS TR ZIP JSY</p>
+				<p>49.90:-(349:-)</p>
+			   </div>
+			   <div class="product_price">
+					<h2>SVEA</h2>
+					<p>W JOY JACKET</p>
+					<p>1799:-(2499:-)</p>
+				</div>
+				<div class="product_price">
+				<h2>EVEREST</h2>
+				<p>T MFN UW SHIRET</p>
+				<p>499:-(249:-)</p>
+				</div>
+				<div class="product_price">
+				<h2>KARI</h2>
+				<p>TRAA WSJÖLVSAGT</p>
+				<p>549:-(349:-)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	 <footer>
+		<div class="footerwrapper">
+			<div class="footerbox">
+				<div class="footerboxtext">
+				<h6>Bli medlem i Stadium Member</h6>
+				<p>På Stadium erbjuder vi alltid riktigt bra priser på allt inom sport och sportmode, toppat med den senaste designen. Registrera dig nu för att ta del av unika erbjudanden och rabatter.</p>
+				<a class="footerbutton" href="">Läs mer</a>
+				</div>
+			</div>
+			<div class="footerbox">
+				<div class="footerboxtext1">
+				<h6>Kontakta oss</h6>
+				<li><a href="">0771-499 499</a></li>
+				<li>mån-fre: 9-20 | lör-sön: 10-18</li>
+				<li><a href="">Avvikande öppettider</a></li>
+				<br>
+				<li><a href="">Frågor och svar</a></li>
+				<li><a href="">Maila oss här </a></li>
+				<a href=""><i class="fa fa-facebook" style="font-size:24px"></i></a>
+				<a href=""><i class="fa fa-instagram" style="font-size:24px"></i></a>
+				<a href=""><i class="fa fa-youtube" style="font-size:24px"></i></a>
+				</div>
+			</div>
+			<div class="footerbox">
+				<div class="footerboxtext1">
+					<h6>Snabblänkar</h6>
+					<ul class="list-column">
+						<li><a href="">Våra butiker</a></li>
+						<li><a href="">Medlem</a></li>
+						<li><a href="">Köpvillkor</a></li>
+						<li><a href="">Integritetspolicy</a></li>
+						<li><a href="about.html" target="_blank">Om Stadium</a></li>
+						<li><a href="">Hållbarhet</a></li>
+						<li><a href="">Event & Sponsering</a></li>
+						<li><a href="">Medlemspriser</a></li>
+						<li><a href="">Storleksguide</a></li>
+						<li><a href="">Garanterat nöjd</a></li>
+					</ul>
+					<p>Stadium Sverige AB 601 60
+					Norrköping, Orgnr. 556236-4397</p>
+				</div>
+			</div>
+			<div class="footerbox">
+				<div class="footerboxtext1">
+					<h6>Länkar</h6>
+					<ul class="list-column">
+						<li><a href="">Sports Camp</a></li>
+						<li><a href="">Teamsales</a></li>
+						<li><a href="">Karriär</a></li>
+						<li><a href="">Press</a></li>
+						<li><a href="">Stadium Konto</a></li>
+						<li><a href="">Presentkort</a></li>
+						<li><a href="">Cookies</a></li>
+						<li><a href="">ODR</a></li>
+						<li><a href="">Sitemap</a></li>
+					</ul>
+					<img src="../images/swish.png">
+					<img src="../images/visa.png">
+					<img src="../images/mastercard.png">
+					<img src="../images/collector.png">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" class="go-top" style="display: none;"><i class="fa fa-angle-up fa-2x"></i></a>
+
+	<script>
+				/*transform angle down to angle up*/
+			$(".rotate").click(function () {
+		    $(this).toggleClass("down");
+		     })
+			$(window).scroll(function () {
+		  if($(window).scrollTop() > 41) {
+		    $("#middle-menu-list_wrapper").addClass('sticky');
+		    $("#middle-menu-list_wrapper * :not(.fw-dropdown a) ").addClass('scrolled');
+		    $("#stadium_Logo_black").hide();
+		    $("#stadium_white_image img").show();
+		    }
+		    else {
+		    $("#middle-menu-list_wrapper").removeClass('sticky');
+		    $("#middle-menu-list_wrapper * ").removeClass('scrolled');
+		    $("#stadium_white_image img").hide();
+		    $("#stadium_Logo_black").show();
+		    }
+		   });
+
+			$(document).ready(function() {
+	            // Show or hide the sticky footer button
+	            $(window).scroll(function() {
+	                if ($(this).scrollTop() > 100) {
+	                    $('.go-top').fadeIn(500);
+	                } else {
+	                    $('.go-top').fadeOut(300);
+	                }
+	            });
+
+	            // Animate the scroll to top
+	            $('.go-top').click(function(event) {
+	                event.preventDefault();
+
+	                $('html, body').animate({scrollTop: 0}, 300);
+	            })
+	        });
+    </script>
+
+</body>
+</html>

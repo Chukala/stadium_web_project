@@ -1,0 +1,1062 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body{
+	line-height: 1.5;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
+	font-size: 13px;
+}
+
+/*hide mobile start here*/
+.container {
+	display: none;
+}
+.mobile-menu-container{
+	display: none;
+}
+/* hiding the checkbox */
+.nav-toggle {
+	display: none;
+}
+.nav-toggle-label{
+	display: none;
+}
+.nav-toggle-inside{
+	display: none;
+}
+.nav-toggle-label-inside{
+	display: none;
+}
+
+/*hide mobile ends*/
+ #header-top .navigation-top-list {
+	background: #333;
+	color: #fff;
+	width: 100%;
+	max-height: 41px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#top-logo_ul {
+	list-style-type: none;
+	overflow: hidden;
+	width: 45%;
+	height: 41px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#header-top .navigation-top-list li:hover {
+	background: none;
+}
+
+.navigation-top-list li a {
+     color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: none;
+}
+ .top-h2 {
+ 	margin:auto;
+ 	flex: 1;
+ 	font-size: 8px;
+ }
+
+/*middle  menu bar*/
+#middle-menu-list_wrapper{
+	width: 100%;
+	height: 87px;
+	background: #fff;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 10px 0px;
+}
+
+#middle-menu-list_wrapper .middle-menu_ul {
+	flex-basis: 15%;
+	max-height: 87px;
+	padding: auto;
+	margin: auto;
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;   
+}
+#middle-menu-list_wrapper .middle-menu_ul .middle-ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-menu_ul li {
+	list-style-type: none;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	/*margin-right: 10px;*/
+}
+.middle-menu_ul ul li a {
+	text-decoration: none;
+	color: #000;
+	padding: 5px 10px;
+	margin: auto;
+}
+.middle-menu_ul ul li:hover .fw-dropdown {
+	display: flex;
+	z-index: 5;
+}
+.middle-menu_ul .fw-dropdown {
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: 100%;
+	flex-flow: column;
+}
+.fw-dropdown li {
+	width: 100%;
+	display: flex;
+}
+.fw-dropdown li a {
+	 padding: 5px 0px;
+	 margin: auto;
+	 width: 100%;
+	 text-align: center;
+}
+.fw-dropdown li a:hover {
+ color: #ff9d00;
+}
+/*the bottom header navbar*/
+.bottom-menu-list_wrapper{
+	width: 100%;
+	background: #fff;
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+nav{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top:100%;
+	left: 0;
+	border-bottom: 1px solid #EAEAEB;
+}
+
+ul {
+	list-style: none;
+}
+
+a{
+	color: #969696;
+	margin: auto;
+}
+
+li:hover{
+	background: #fff;
+}
+li a:hover {
+	color: #ff9d00;
+}
+.bottom-menu-list_wrapper #main-menu {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.bottom-menu-list_wrapper #main-menu li {
+	text-align: center;
+	height: 100%;
+	/*width: 100%;*/
+	display: flex;
+	padding:0 20px;
+}
+.fw-dropdown{
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	padding: 10px 0px;
+	background: #fff;
+	color: #969696;	
+}
+#main-menu .fw-dropdown li{
+	height: auto;
+	padding: 10px 0px;
+	border-right: 1px solid #969696;
+}
+#main-menu .fw-dropdown li a:hover{
+	color: #ff9d00;
+}
+.bottom-menu-list_wrapper #main-menu .fw-dropdown ul{
+	flex-basis: 20%;
+}
+.bottom-menu-list_wrapper #main-menu li:hover .fw-dropdown{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	z-index: 5;
+}
+/*search placeholder color change*/
+::placeholder {
+    color: #ff9d00;
+    opacity: 1; 
+}
+#search-id {
+	border: 0; 
+}
+#search-id:focus{
+    outline: none;
+}
+.fa-search {
+	color:#ff9d00;
+	padding: 0px 2px;
+}
+
+
+/*mobile start here*/
+@media (max-width: 800px){
+/*display our label*/
+.nav-toggle-label{
+	background: #fff;
+	display: flex;
+	cursor: pointer;
+	flex-flow: column wrap;
+	justify-content: center;
+	color: #ff9d00;
+}
+#mobile_ul li span{
+	display: flex;
+	flex-flow: column wrap;
+
+}
+/*hiding our navigation */
+#menu{
+	display: none;
+}
+.bottom-menu-list_wrapper{
+	display: none;
+}
+
+#nav-toggle:checked ~ #menu {
+	display: flex;
+	opacity: 1;
+	z-index: 1;
+}
+#nav-toggle:checked ~ #menu #main-menu{
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	height: 100vh;
+}
+#nav-toggle:checked ~ #menu #main-menu li {
+	display: flex;
+	flex-flow: column wrap;
+}
+#sub-container{
+	text-align: center;
+	width: 100%; /* takes up 80% of header(parent element) */
+	margin: auto; /* adjusts itself horizontally and vertically*/ 
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #EAEAEB;
+}
+/* Header menu*/
+.mobile-menu-container{
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	text-align: center;
+	display: flex;
+    padding: 0;
+	align-items: center;
+	justify-content: center;
+	position: relative;	
+}
+/*login and search bar humberger menu when it toggled */
+.mobile-menu-container #mobile-ul{
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	list-style-type: none;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
+
+#menu {
+	position: absolute;
+	background: #fff;
+	text-align: center;
+	top: 100%; /* puts itself directly under the preceeding relative positioned element */
+	left: 0;
+	width: 100%;
+	transform: scale(1, 1);
+	transform-origin: top; /* menu appears from the top instead if center, try and comment this out and see for yourself */
+	transition: transform .4s ease-in-out;
+
+}
+
+#menu ul {
+	list-style: none;
+
+}
+#menu li:first-child{
+	border-top: 1px solid #EAEAEB;
+}
+#menu li {
+	padding: 20px 10px;
+	border-bottom: 1px solid #EAEAEB;
+	background: white;
+	z-index: 1;
+
+}
+
+#menu a {
+	text-decoration: none;
+	color: #969696;
+	font-size: 20px;
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+}
+
+#menu a:hover {
+	color: #ff9d00;
+}
+
+#nav-toggle:checked + #menu {
+	transform: scale(1, 1);
+}
+#nav-toggle:checked ~ #menu a {
+	opacity: 1;
+	transition: opacity .25s ease-in-out .35s;
+}
+.fa-bars{
+	color: #ff9d00;
+}
+.container {
+	display: flex;
+	flex-flow: column wrap;
+}
+#middle-menu-list_wrapper{
+	display: none;
+}
+/*mobile ends here*/
+#middle_logo{
+   	display: none;
+   }
+#header-top .navigation-top-list {
+		display: none;
+ }	
+.fa-search {
+	color: #ff9d00;
+	padding: 0px 2px;
+}
+.mobile-menu-container .fa-search{
+	color: #969696;
+	padding: 0px 2px;
+}
+#hero-section{
+	position: absolute;
+}
+#bestseler-four_product_section{
+	position: absolute;
+ }
+}
+
+
+
+
+/*PRODUCT STARTS HERE!!!!!!*/
+
+/*Product styles*/
+
+.breadcrumb{
+	width: 80%;
+	margin: 30px auto;
+	font-size: 14px;
+	color: #c7c7c7;
+}
+
+.breadcrumb a{
+	color: #c7c7c7;
+	text-decoration: none;
+}
+
+.breadcrumb a:hover{
+	color: #ff9d00;
+	text-decoration: underline;
+}
+
+.breadcrumbprod{
+	color: #333;
+	font-weight: bold;
+}
+
+#productinfo{
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+
+#productinfo .border{
+	display: none;
+	padding: 20px 0;
+}
+
+.productbox1{
+	flex-basis: 15%;
+	display: flex;
+	flex-direction: column;
+}
+
+.productbox2{
+	flex-basis:55%;
+}
+
+.productbox3{
+	flex-basis: 30%;
+}
+
+.productbox1 .productpicture{
+	width: 60px;
+	padding: 5px;
+	border: 1px solid #ff9d00;
+	margin-top: 10px;
+}
+
+.productbox1 :last-child{
+	border: 1px solid #c7c7c7;
+}
+
+.productbox2 .productpicture{
+	background: url(../images/PARKA400.png);
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.productbox2 .productpicture:hover{
+	background: url(../images/PARKA-back400.png);
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.productbox3 img{
+	width: 125px;
+	margin-bottom: 15px;
+}
+
+.productbrand{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.productdis{
+	font-size: 18px;
+	line-height: 1px;
+}
+
+.productprice{
+	font-size: 60px;
+}
+
+.color,
+.size{
+	width: 80%;
+	border: 1px solid #c7c7c7;
+	padding: 5px 10px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+
+.size .fa,
+.color .fa{
+	color: #c7c7c7;
+}
+
+.size .fa:hover,
+.color .fa:hover{
+	color: #ff9d00;
+}
+
+.colordropdown a{
+	padding: 0 10px;
+	line-height: 50px;
+	text-decoration: none; 
+	display: block;
+	border: 1px solid #c7c7c7;
+	color: #333;
+}
+
+.colordropdown a:hover{
+	color: #fff;
+	background-color: #ff9d00;
+}
+
+.colordropdown{
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	z-index: 50;
+}
+
+#toggle{
+	display: none
+}
+
+#toggle:checked + .colordropdown{
+		display: block;
+	}
+
+.sizedropdown a{
+	padding: 0 10px;
+	line-height: 50px;
+	text-decoration: none; 
+	display: block;
+	border: 1px solid #c7c7c7;
+	color: #333;
+}
+
+.sizedropdown a:hover{
+	color: #fff;
+	background-color: #ff9d00;
+}
+
+.sizedropdown{
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	z-index: 50;
+}
+
+#toggle2{
+	display: none
+}
+
+#toggle2:checked + .sizedropdown{
+		display: block;
+	}
+
+.varukorgbutton{
+	background:  #ff9d00;
+	text-align: center;
+	width: 86%;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 13px 0;
+	margin-top: 10px;
+}
+
+.varukorgbutton a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.varukorgbutton:hover{
+	filter: brightness(80%);
+}
+
+.infobox{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.infoboxcon{
+	display: flex;
+}
+
+.infoboxcon a{
+	color: #333;
+	text-decoration: none;
+	padding-bottom: 12px;
+	padding-left: 5px;
+}
+
+.infoboxcon a:hover{
+	text-decoration: underline;
+	text-decoration-color: #ff9d00;
+}
+
+.infoboxcon img{
+	width: 16px;
+}
+
+#productbanner{
+	border: 1px solid #c7c7c7;
+	color: #ff9d00;
+	font-weight: bold;
+	margin-top: 70px;
+}
+
+.productwrapper{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.check{
+	display: flex;
+	padding: 15px;
+}
+
+.check img{
+	width: 16px;
+	margin-right: 10px;
+}
+
+/*Product description Styles */
+
+#product-description{
+	width: 70%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+#product-description a{
+	padding: 0 5px;
+	color: #333;
+	text-decoration: underline;
+	text-decoration-color: #c7c7c7;
+}
+
+#product-description .flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+#product-description a:hover{
+	color: #ff9d00;
+	text-decoration-color: #ff9d00;
+}
+
+
+#toggle3{
+	display: none;
+}
+
+#toggle3:checked + .product-descriptiondropdown{
+		display: none;
+	}
+
+.description-body{
+	display: flex;
+	width: 90%;
+}
+
+.description-body p{
+	flex-basis:70%;
+	padding-right: 80px;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+.description-body ul{
+	flex-basis: 30%;
+}
+
+.description-body li::before {content: "•"; color: #ff9d00;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+
+.artnr{
+	color: #c7c7c7;
+}
+/*Review score*/
+
+.border{
+	border-top: 1px solid #c7c7c7;
+}
+
+#recensioner{
+	width: 70%;
+	margin: auto;
+	padding: 20px 0;
+}
+
+#recensioner .flex{
+	display: flex;
+	align-items: center;
+}
+
+#recensioner .flex label{
+	margin-left: auto;
+}
+
+#recensioner .flex img{
+	width: 16px;
+}
+
+#recensioner h3:hover{
+	color: #ff9d00;
+}
+
+.scoredropdown{
+	display: none;
+}
+
+#toggle4{
+	display: none;
+}
+
+#toggle4:checked + .scoredropdown{
+		display: block;
+	}
+.finalscore{
+	font-size: 60px;
+}
+
+.scoredropdown img{
+	width: 16px;
+}
+
+.reviewer{
+	font-weight: bold;
+}
+
+.scoredropdown .thumbs{
+	width: 16px;
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+
+.bigstar img{
+	width: 24px;
+}
+
+.fler{
+	font-style: italic;
+	color: #333;
+	border-top: 1px solid #ff9d00;
+	border-bottom: 1px solid #ff9d00;
+	padding: 5px 0 5px 0;
+}
+
+#utvalda-favoriter{
+	width: 75%;
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+}
+
+#utvalda-favoriter .top-row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#utvalda-favoriter .top-row h5{
+	display: none;
+	font-size: 18px;
+}
+
+#utvalda-favoriter .top-row img{
+	max-height: 24px;
+}
+
+#utvalda-favoriter .divider_component{
+    color: #000;
+    background-color: #fff;
+    line-height: 1.4;
+	text-align: center;
+    border-bottom: 1px solid #ff9d00;
+    padding: 0 16px;
+    width: 80%;
+    height: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    top: -8px;
+    margin: 10px 0;
+}
+
+#utvalda-favoriter .divider_component span{
+    background: #fff;
+    z-index: 5;
+    opacity: 1;
+    padding: 0px 16px;
+}
+
+#utvalda-favoriter .dots{
+	display: flex;
+	justify-content: center;
+}
+
+#utvalda-favoriter .dots img{
+	max-width: 7px;
+	max-height: 7px;
+	margin: 5px 3px;
+}
+
+.utvalda-favoriter-products{
+	display: flex;
+	justify-content: space-between;
+	max-width: 85%;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+}
+
+.utvalda-favoriter-products .product{
+	flex-basis: 30%;
+	height: 350px;
+	border: 1px solid #ff9d00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.utvalda-favoriter-products .product img{
+	max-width: 100%;
+}
+
+#utvalda-favoriter .product-info{
+	display: flex;
+	justify-content: space-between;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+#utvalda-favoriter .utvalda-favoriter-card{
+	flex-basis: 30%;
+}
+
+
+/*Footer Styles*/
+footer{
+	background-color: #333;
+}
+
+footer li:hover{
+	background-color: #333;
+}
+
+.footerbutton {
+	margin: 10px 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+	color: #333;
+	background-color: #fff;
+	font-weight: bold;
+}
+
+.footerbutton:hover{
+	background-color: #d6d6d6;
+}
+
+.footerwrapper{
+	width: 80%;
+	padding: 20px 0;
+	margin: 0 auto;
+	display: flex;
+}
+
+.footerbox{
+	flex-basis: 25%;
+	color: #fff;
+}
+
+.footerboxtext{
+	padding: 40px 8%;
+}
+
+.footerboxtext1{
+	padding: 20px 5%;
+}
+
+.footerboxtext1 p{
+	color: #999;
+	margin-top: 15px; 
+}
+
+.footerbox p{
+	padding: 10px;
+}
+
+.footerbox h6{
+	padding: 10px;
+	font-size: 14px;
+}
+
+.footerbox li{
+	list-style: none;
+	padding: 0 0 0 10px;
+}
+
+.footerboxtext1 img{
+	width: 50px;
+	filter: brightness(65%);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.swish{
+	width: 80px;
+}
+
+
+.footerbox .fa{
+	padding: 15px 10px 0px 10px;
+}
+
+.list-column {
+	column-count: 2;
+}
+
+.list-column li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.footerboxtext1 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footerboxtext1 a:hover{
+	color: #ff9d00;
+	text-decoration: underline;
+}
+
+@media (max-width: 800px){
+
+.breadcrumb{
+	display: none;
+}
+
+#productinfo{
+	flex-direction: column;
+}
+
+.productbox1{
+	display: none;
+}
+
+.productbox2 .productpicture{
+	background: url(../images/PARKA350.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.productbox2 .productpicture:hover{
+	background: url(../images/PARKA-Back350.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footerwrapper{
+	flex-direction: column;
+}
+
+#productinfo{
+	width: 100%
+}
+
+#productinfo .border{
+	display: initial;
+}
+
+.productbox2, 
+.productbox3{
+	padding-left: 15px;
+}
+
+.productwrapper{
+	flex-direction: column;
+	width: 100%;
+}
+
+.check{
+	padding: 5px;
+}
+
+.description-body{
+	flex-direction: column;
+}
+
+.description-body p{
+	padding-right: 0;
+	margin-bottom: 30px;
+}
+
+.description-body ul{
+	padding-left: 10px;
+}
+
+#product-description{
+	width: 90%;
+}
+
+#recensioner{
+	width: 90%;
+}
+
+.utvalda-favoriter-products .product:last-child{
+	display: none;
+}
+
+.utvalda-favoriter-products .product{
+	flex-basis: 48%;
+	height: 250px;
+}
+
+.product-info .utvalda-favoriter-card:last-child{
+	display: none;
+}
+
+#utvalda-favoriter .utvalda-favoriter-card{
+	flex-basis: 48%;
+}
+
+#utvalda-favoriter{
+	width: 97%;
+	padding-bottom: 15px;
+}
+
+.utvalda-favoriter-products{
+	max-width: 100%;
+}
+
+#utvalda-favoriter .top-row img{
+	display: none;
+}
+
+#utvalda-favoriter .divider_component{
+	display: none;
+}
+
+#utvalda-favoriter .top-row h5{
+	display: block;
+}
+
+#utvalda-favoriter .product-info{
+	max-width: 97%;
+}
+
+}
